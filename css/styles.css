@@ -96,8 +96,17 @@ body {
 
   /*--------------Main/Hero--------------*/
 }
-.hero-main-title {
-  /*сховати заголов*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 .hero {
 }
@@ -137,6 +146,7 @@ body {
 /*--------------Team--------------*/
 
 .team {
+  background-color: #f5f4fa;
 }
 .team-title {
   font-family: "Roboto";
@@ -174,11 +184,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 .footer-mail {
@@ -197,4 +204,48 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.logo-footer {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/*--------------Portfolio--------------*/
+.main-btn-portf {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.portf-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.portf-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.main-item-portf {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.main-btn-portf:hover,
+.main-btn-portf:focus {
+  background-color: #2196f3;
 }
