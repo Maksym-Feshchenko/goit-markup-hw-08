@@ -9,7 +9,7 @@
 
 /*--------------Body--------------*/
 
-body {
+body header footer {
   font-family: "roboto", verdana, sans-serif;
 }
 
@@ -66,7 +66,6 @@ body {
   background: #2f303a;
 }
 .hero-1-title {
-  font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
   text-align: center;
@@ -105,7 +104,6 @@ body {
   margin: -1px;
 }
 .hero-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
@@ -113,7 +111,6 @@ body {
   color: #212121;
 }
 .hero-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -139,9 +136,6 @@ body {
   background-color: #f5f4fa;
 }
 .team-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
