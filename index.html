@@ -8,6 +8,15 @@
     <title>Web-Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Modern normalize-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Custom styles-->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -50,116 +59,124 @@
     </header>
 
     <main>
-      <section class="hero-1">
-        <h1 class="hero-1-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-btn">Замовити послугу</button>
+      <section class="hero-1 section">
+        <div class="container">
+          <h1 class="hero-1-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="main-btn">Замовити послугу</button>
+        </div>
       </section>
 
-      <section class="hero">
-        <h2 class="visually-hidden">Особливості</h2>
-        <ul class="hero-list list">
-          <li class="hero-list-item">
-            <h3 class="hero-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="hero-text">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="hero-list-item">
-            <h3 class="hero-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="hero-text">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="hero-list-item">
-            <h3 class="hero-title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="hero-text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="hero-list-item">
-            <h3 class="hero-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="hero-text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
+      <section class="hero section">
+        <div class="container">
+          <h2 class="visually-hidden">Особливості</h2>
+          <ul class="hero-list list">
+            <li class="hero-list-item">
+              <h3 class="hero-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="hero-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="hero-list-item">
+              <h3 class="hero-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="hero-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="hero-list-item">
+              <h3 class="hero-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="hero-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="hero-list-item">
+              <h3 class="hero-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="hero-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h2 class="about-title">Чим ми займаємося</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/what-do-we-do-1.jpg"
-              alt="зайнятість-1"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/what-do-we-do-2.jpg"
-              alt="зайнятість-2"
-              width="370"
-              height="294"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/what-do-we-do-3.jpg"
-              alt="зайнятість-3"
-              width="370"
-              height="294"
-            />
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 class="about-title">Чим ми займаємося</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="./images/what-do-we-do-1.jpg"
+                alt="зайнятість-1"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/what-do-we-do-2.jpg"
+                alt="зайнятість-2"
+                width="370"
+                height="294"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/what-do-we-do-3.jpg"
+                alt="зайнятість-3"
+                width="370"
+                height="294"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="team">
-        <h2 class="team-title">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/team-1.jpg"
-              alt="team-1"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-worker">Ігор Дем'яненко</h3>
-            <p class="team-job-title">Product Designer</p>
-          </li>
-          <li>
-            <img
-              src="./images/team-2.jpg"
-              alt="team-2"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-worker">Ольга Рєпіна</h3>
-            <p class="team-job-title">Frontend Developer</p>
-          </li>
-          <li>
-            <img
-              src="./images/team-3.jpg"
-              alt="team-3"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-worker">Микола Тарасов</h3>
-            <p class="team-job-title">Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/team-4.jpg"
-              alt="team-4"
-              width="270"
-              height="260"
-            />
-            <h3 class="team-worker">Михайло Єрмаков</h3>
-            <p class="team-job-title">UI Designer</p>
-          </li>
-        </ul>
+      <section class="team section">
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="list">
+            <li>
+              <img
+                src="./images/team-1.jpg"
+                alt="team-1"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-worker">Ігор Дем'яненко</h3>
+              <p class="team-job-title">Product Designer</p>
+            </li>
+            <li>
+              <img
+                src="./images/team-2.jpg"
+                alt="team-2"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-worker">Ольга Рєпіна</h3>
+              <p class="team-job-title">Frontend Developer</p>
+            </li>
+            <li>
+              <img
+                src="./images/team-3.jpg"
+                alt="team-3"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-worker">Микола Тарасов</h3>
+              <p class="team-job-title">Marketing</p>
+            </li>
+            <li>
+              <img
+                src="./images/team-4.jpg"
+                alt="team-4"
+                width="270"
+                height="260"
+              />
+              <h3 class="team-worker">Михайло Єрмаков</h3>
+              <p class="team-job-title">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
