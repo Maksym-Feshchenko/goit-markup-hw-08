@@ -1,3 +1,4 @@
+/*--------------Root--------------*/
 :root {
   --main-title-color: #ffffff;
   --second-color-: #000000;
@@ -8,17 +9,19 @@
   --indent: 30px;
   --items: 3;
 }
-
 /*--------------Body--------------*/
-
 body {
   font-family: "roboto", verdana, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
 }
-
 .link {
   text-decoration: none;
 }
-
+footer {
+  background-color: #2f303a;
+}
 /*--------------Card-Set--------------*/
 .card-set {
   display: flex;
@@ -28,9 +31,7 @@ body {
 .card-set-items {
   flex-basis: calc((100% - var(--indent) * var(--items-1)) / var(--items));
 }
-
 /*--------------Header--------------*/
-
 .header {
   background-color: #ffffff;
 }
@@ -45,6 +46,7 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: #2196f3;
 }
 .logo-header,
@@ -56,16 +58,15 @@ body {
 }
 .nav-list {
   display: flex;
+
   align-items: center;
   gap: 50px;
 }
-
 .header-group {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-
 .nav-cont {
   margin-right: auto;
 }
@@ -79,7 +80,6 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
-
 .nav-link:hover,
 .nav-link:focus {
   color: #2196f3;
@@ -91,33 +91,30 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
 /*--------------Main/Hero-1--------------*/
 
-.hero-1 {
+.hero-section {
   background: #2f303a;
-}
-.hero-2 {
-}
-.about-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 .hero-1-title {
   display: block;
   margin: 0 auto;
   width: 696px;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.363;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .btn {
   display: flex;
   margin: 0 auto;
 }
-
 .main-btn {
   margin-top: 30px;
   border: #2196f3;
@@ -156,7 +153,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 .hero-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -165,12 +161,12 @@ body {
   text-transform: uppercase;
   color: #212121;
 }
-
 .hero-list {
   display: flex;
+  justify-content: center;
+
   gap: 30px;
 }
-
 .hero-text {
   width: 270px;
   font-size: 14px;
@@ -178,9 +174,7 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-
-/*--------------About--------------*/
-
+/*--------------Gallery--------------*/
 .about-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -190,13 +184,17 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
-/*--------------Team--------------*/
-
-.team {
-  background-color: #f5f4fa;
+.gallery {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  display: flex;
+  justify-content: center;
 }
-
+/*--------------Team--------------*/
+.team-section {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
 .team-fon {
   background: #ffffff;
   /* material shadow v1 */
@@ -204,7 +202,6 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-title {
   padding-top: 94px;
   margin-bottom: 50px;
@@ -214,7 +211,6 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
 .team-worker {
   margin-bottom: 10px;
   font-weight: 500;
@@ -235,17 +231,31 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 /*--------------Footer--------------*/
-.footer-container {
-  display: grid;
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-address-container {
+  width: 231px;
+}
+.address-list {
+  margin-bottom: 9px;
+  text-decoration: inherit;
 }
 
-.footer-address {
+.address-list:last-child {
+  margin-bottom: 0;
 }
+address,
+.address-item {
+  font-style: inherit;
 
-.footer {
-  background-color: #2f303a;
+  line-height: 1.71;
 }
 .footer-address {
   font-weight: 400;
@@ -274,15 +284,13 @@ body {
 .logo-1 {
   margin-top: 30px;
 }
-
-.logo-footer {
+.logo-footer-color {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-
 /*--------------Portfolio--------------*/
 .list-nav {
   display: inline;
@@ -310,7 +318,6 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
 .portf-title {
   margin-bottom: 8px;
   margin-bottom: 4px;
@@ -348,7 +355,6 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-
 /*--Block styles--/
 /*reset start*/
 h1,
