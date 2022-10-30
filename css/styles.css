@@ -9,6 +9,7 @@
   --indent: 30px;
   --items: 3;
 }
+
 /*--------------Body--------------*/
 body {
   font-family: "roboto", verdana, sans-serif;
@@ -58,6 +59,7 @@ footer {
 .logo-footer {
   color: #000000;
 }
+
 .nav-main {
   margin-left: 93px;
 }
@@ -349,6 +351,11 @@ address,
   letter-spacing: 0.03em;
   color: #212121;
 }
+
+.img-text {
+  text-decoration: none;
+}
+
 .main-btn-portf:hover,
 .main-btn-portf:focus {
   background-color: #2196f3;
@@ -361,6 +368,7 @@ address,
   border: 1px solid #eeeeee;
   border-top: none;
 }
+
 /*--Block styles--/
 /*reset start*/
 h1,
@@ -392,4 +400,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.social-links .link:visited {
+  color: #2196f3;
 }
