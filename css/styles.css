@@ -46,6 +46,7 @@ footer {
 .header-container {
   display: flex;
   align-items: center;
+  max-width: 1600px;
 }
 
 .logo {
@@ -195,6 +196,13 @@ footer {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+.features-section {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*--------------Gallery--------------*/
 .about-title {
   margin-bottom: 50px;
@@ -211,10 +219,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+.features-section {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*--------------Team--------------*/
 .team-section {
   background-color: #f5f4fa;
   padding-bottom: 94px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-fon {
   background: #ffffff;
@@ -257,6 +275,10 @@ footer {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-logo {
   display: block;
@@ -569,6 +591,12 @@ img {
 
 .footer-container {
   display: flex;
+}
+
+.clients-section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*------social-networks--------*/
