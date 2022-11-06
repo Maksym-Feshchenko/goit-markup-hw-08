@@ -36,7 +36,7 @@
           <li class="nav-item">
             <a class="nav-link link" href="./index.html">Студія</a>
           </li>
-          <li class="nav-item social-links">
+          <li class="nav-item visited">
             <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
           </li>
           <li class="nav-item">
@@ -47,15 +47,22 @@
       <ul class="list nav-list header-group">
         <li>
           <a
-            href="mailto:info@devstudio.com"
             class="nav-link link header-contact"
-            >info@devstudio.com</a
+            href="mailto:info@devstudio.com"
           >
+            <svg class="icon-mail">
+              <use href="./images/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
         </li>
         <li>
-          <a href="tel:+380961111111" class="nav-link link header-contact"
-            >+380961111111</a
-          >
+          <a class="nav-link link header-contact" href="tel:+380961111111">
+            <svg class="icon-tel">
+              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +380961111111
+          </a>
         </li>
       </ul>
     </div>
@@ -220,12 +227,12 @@
   </main>
   <!--Footer-->
   <footer>
-    <div class="container">
-      <div class="footer-address-container">
+      <div class="container masage-footer">
+        <div class="logo-footer-pos">
         <a class="logo link footer-logo" href="/index.html"
           >Web<span class="logo-footer-color">Studio</span></a
         >
-        <address>
+         <address>
           <ul class="list">
             <li class="address-list">
               <a href="" class="footer-address link address-item"
@@ -245,8 +252,56 @@
               >
             </li>
           </ul>
-        </address>
+         </address>
+        </div>
+
+            <div class="blok-msg-footer">
+               <address class="blok-pos-footer">
+                <h3 class="title-footer">приєднуйтесь</h3>
+                <ul class="list list-team list-social">
+                  <li class="link-team">
+                    <a class="social-links-footer link" href=""
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Instagram icon">
+                      <svg class="socials-icon-footer">
+                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                    </li>
+                    <li class="link-team">
+                     <a class="social-links-footer link" href=""
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Twitter icon">
+                      <svg class="socials-icon-footer">
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                    </li>
+                    <li class="link-team">
+                     <a class="social-links-footer link" href=""
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Facebook icon">
+                      <svg class="socials-icon-footer">
+                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                    </li>
+                    <li class="link-team"></li>
+                     <a class="social-links-footer link" href=""
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     aria-label="Linkedin icon">
+                      <svg class="socials-icon-footer">
+                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>  
+                  </li>
+                </ul>
+              </address>
+            </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </body>
