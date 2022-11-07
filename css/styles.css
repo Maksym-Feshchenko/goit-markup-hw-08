@@ -495,10 +495,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-/*--<svg>
-            <use href="./images/hero/img-hero.svg"></use>
-          </svg>--*/
-
 .icon-about {
   content: "";
 
