@@ -496,16 +496,12 @@ img {
   background-position: center;
 }
 .icon-about {
-  content: "";
-
   width: 70px;
   height: 70px;
 
-  background-size: contain;
-  background-position: center;
-
-  margin-left: 100px;
-  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-about::after {
@@ -516,7 +512,10 @@ img {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  display: block;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-mail {
   width: 16px;
@@ -611,7 +610,7 @@ img {
 
 .social-links:hover .socials-icon,
 .social-links:focus .socials-icon {
-  fill: currentColor;
+  fill: #ffffff;
   background-color: #2196f3;
 }
 
@@ -642,6 +641,9 @@ img {
   height: 20px;
   fill: #ffffff;
 }
+.social-links-color {
+}
+
 .social-links-footer {
   display: flex;
   justify-content: center;
