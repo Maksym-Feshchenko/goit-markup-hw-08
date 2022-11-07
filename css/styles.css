@@ -22,6 +22,7 @@ body {
 }
 footer {
   background-color: #2f303a;
+  max-width: 1600px;
 }
 /*--------------Card-Set--------------*/
 .card-set {
@@ -39,14 +40,18 @@ footer {
 }
 
 /*--------------Header--------------*/
+
 .header {
   background-color: white;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
+
 .header-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
   display: flex;
   align-items: center;
-  max-width: 1600px;
 }
 
 .logo {
@@ -67,27 +72,32 @@ footer {
 .logo-footer {
   color: #000000;
 }
-
+.logo-pos {
+  padding-left: 215px;
+}
 .nav-main {
   margin-left: 93px;
 }
+.nav-header-pos {
+  padding-right: 215px;
+}
 
 .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 318px;
   display: flex;
 
   align-items: center;
   gap: 50px;
 }
-.header-group {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
+
 .nav-cont {
   margin-right: auto;
 }
 .nav-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -95,6 +105,7 @@ footer {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: #212121;
+  align-items: center;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -197,12 +208,6 @@ footer {
   color: #757575;
 }
 
-.features-section {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*--------------Gallery--------------*/
 .about-title {
   margin-bottom: 50px;
@@ -220,17 +225,10 @@ footer {
   justify-content: center;
 }
 
-.features-section {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*--------------Team--------------*/
 .team-section {
   background-color: #f5f4fa;
   padding-bottom: 94px;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -242,7 +240,6 @@ footer {
   border-radius: 0px 0px 4px 4px;
 }
 .team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.166;
@@ -250,6 +247,10 @@ footer {
   letter-spacing: 0.03em;
   color: #212121;
 }
+.container-team {
+  padding-top: 94px;
+}
+
 .team-worker {
   margin-bottom: 10px;
   font-weight: 500;
@@ -275,7 +276,6 @@ footer {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 1600px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -352,24 +352,12 @@ address,
   display: block;
 
   margin-left: 70px;
-}
-.blok-pos-footer {
   margin-top: 15px;
 }
 
 .logo-footer-pos {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.social-links-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #ffffff;
 }
 
 /*--------------Portfolio--------------*/
@@ -512,13 +500,20 @@ img {
           </svg>--*/
 
 .icon-about {
+  content: "";
+
   width: 70px;
   height: 70px;
 
   background-size: contain;
+  background-position: center;
 
   margin-left: 100px;
   margin-top: 25px;
+}
+
+.icon-about::after {
+  background-position: center;
 }
 
 .div-icon {
@@ -531,12 +526,16 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+
+  fill: currentColor;
 }
 
 .icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+
+  fill: currentColor;
 }
 
 /*----------Icon Clients---------*/
@@ -556,10 +555,10 @@ img {
   margin: 0;
   padding: 0;
   margin-left: auto;
+  margin-top: 50px;
 }
 
 .link-clients {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -569,6 +568,8 @@ img {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  color: #2196f3;
 }
 
 .icon-logo-client {
@@ -580,13 +581,13 @@ img {
 
 .link-clients:hover .icon-logo-client,
 .link-clients:focus .icon-logo-client {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: currentColor;
+  border-color: currentColor;
 }
 
 .link-clients:hover,
 .link-clients:focus {
-  border-color: #2196f3;
+  border-color: currentColor;
 }
 
 .footer-container {
@@ -594,7 +595,6 @@ img {
 }
 
 .clients-section {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -615,7 +615,7 @@ img {
 
 .social-links:hover .socials-icon,
 .social-links:focus .socials-icon {
-  fill: #ffffff;
+  fill: currentColor;
   background-color: #2196f3;
 }
 
@@ -658,7 +658,7 @@ img {
 
 .social-links-footer:hover .socials-icon,
 .social-links-footer:focus .socials-icon {
-  fill: #ffffff 10%;
+  fill: currentColor 10%;
   background-color: #2196f3;
 }
 
