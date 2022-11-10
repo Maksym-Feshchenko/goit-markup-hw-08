@@ -22,7 +22,6 @@ body {
 }
 footer {
   background-color: #2f303a;
-  max-width: 1600px;
 }
 /*--------------Card-Set--------------*/
 .card-set {
@@ -346,18 +345,8 @@ address,
 
 .masage-footer {
   display: flex;
-}
-
-.blok-msg-footer {
-  display: block;
-
-  margin-left: 70px;
-  margin-top: 15px;
-}
-
-.logo-footer-pos {
-  padding-left: 15px;
-  padding-right: 15px;
+  align-items: baseline;
+  gap: 70px;
 }
 
 /*--------------Portfolio--------------*/
@@ -498,10 +487,6 @@ img {
 .icon-about {
   width: 70px;
   height: 70px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .icon-about::after {
@@ -512,7 +497,6 @@ img {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -662,6 +646,4 @@ img {
 
 .social-links-footer:hover {
   background-color: #2196f3;
-}
-.qwe {
 }
