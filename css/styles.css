@@ -449,7 +449,10 @@ address,
 .masage-footer {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+}
+
+.div-link-footer {
+  margin-left: 94px;
 }
 
 /*--------------Portfolio--------------*/
@@ -840,6 +843,13 @@ img {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: #2196f3;
 }
 
 .is-hidden {
@@ -1002,7 +1012,7 @@ img {
 /*-------Form Footer------*/
 
 .form-send-footer {
-  margin-left: 23px;
+  margin-left: 93px;
 }
 
 .title-footer-form {
@@ -1068,7 +1078,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  gap: 10px;
+  gap: 12px;
 }
 
 .img-send-footer {
