@@ -1,0 +1,33 @@
+.icon-features {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-features::after {
+  background-position: center;
+}
+
+.list-features__icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}

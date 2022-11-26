@@ -16,6 +16,9 @@
       referrerpolicy="no-referrer"
     />
     <!--Custom styles-->
+   <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -26,7 +29,7 @@
     <!--Header-->
     <header>
       <div class="header-container  header">
-        <a class="logo logo-pos link" href="./index.html"
+        <a class="logo link" href="./index.html"
           >Web<span class="logo-header">Studio</span></a>
         <nav class="nav-main ">
           <ul class="nav-list list">
@@ -41,7 +44,7 @@
             </li>
           </ul>
          </nav>
-        <ul class="nav-list">
+        <ul class="nav-list nav-list-pos">
           <li>
             <a
               class="nav-link link header-contact"
@@ -64,64 +67,63 @@
         </ul>
       </div>
     </header>
-    <!--Main Info-->
+    <!--Main-->
     <main>
-      <!--Hero-->
-      <section class="hero-section hero-2 overlay">
+      <!--hero-->
+      <section class="hero-section">
         <div class="container">
-          
-          <h1 class="hero-1-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="btn main-btn" data-modal-open>Замовити послугу</button>
+          <h1 class="hero-section__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-section__btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <!--Features-->
+      <!--features-->
       <section class="section">
         <div class="container">
-          <h2 class="visually-hidden">Особливості</h2>
-          <ul class="hero-list list">
+          <h2 class="hidden-title">Особливості</h2>
+          <ul class="list-features list">
             <li>
-              <div class="div-icon">
-              <svg class="icon-about">
+              <div class="list-features__icon">
+              <svg class="icon-features">
                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
               </svg>
               </div>
-              <h3 class="hero-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="hero-text">
+              <h3 class="list-features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="list-features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="hero-list-item">
-              <div class="div-icon">
-              <svg class="icon-about">
+            <li>
+              <div class="list-features__icon">
+              <svg class="icon-features">
                 <use href="./images/symbol-defs.svg#icon-clock"></use>
               </svg>
               </div>
-              <h3 class="hero-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="hero-text">
+              <h3 class="list-features__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="list-features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="hero-list-item">
-              <div class="div-icon">
-              <svg class="icon-about">
+            <li>
+              <div class="list-features__icon">
+              <svg class="icon-features">
                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
               </svg>
               </div>
-              <h3 class="hero-title">ПЛАНУВАННЯ</h3>
-              <p class="hero-text">
+              <h3 class="list-features__title">ПЛАНУВАННЯ</h3>
+              <p class="list-features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="hero-list-item">
-              <div class="div-icon">
-              <svg class="icon-about">
+            <li>
+              <div class="list-features__icon">
+              <svg class="icon-features">
                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
               </div>
-              <h3 class="hero-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="hero-text">
+              <h3 class="list-features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="list-features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -129,7 +131,7 @@
           </ul>
         </div>
       </section>
-      <!--Gallary-->
+      <!--gallary-->
       <section class="gallery section-gallery">
         <div class="container">
           <h2 class="about-title">Чим ми займаємося</h2>
@@ -170,7 +172,7 @@
           </ul>
         </div>
       </section>
-      <!--Team-->
+      <!--team-->
       <section class="team-section">
         <div class="container container-team">
           <h2 class="team-title">Наша команда</h2>
@@ -394,7 +396,7 @@
           </ul>
         </div>
       </section>
-      <!--Clients-->
+      <!--clients-->
       <section class="section clients-section">
         <div class="container">
           <h2 class="titel-clients">Постійні клієнти</h2>
@@ -445,11 +447,11 @@
         </div>
       </section>
     </main>
-    <!--Footer-->
+    <!--footer-->
     <footer>
       <div class="container masage-footer">
         <div>
-         <a class="logo link footer-logo" href="/index.html"
+         <a class="logo footer-logo link" href="/index.html"
           >Web<span class="logo-footer-color">Studio</span></a
          >
          <address>
@@ -473,9 +475,8 @@
             </li>
           </ul>
          </address>
-        </div>
-
-            <div class="div-link-footer">
+         </div>
+        <div class="div-link-footer">
               <p class="title-footer">приєднуйтесь</p>
                 <ul class="list list-team list-social">
                   <li class="link-team">
@@ -520,9 +521,8 @@
                     </li>  
                   </li>
                 </ul>
-               </div>
-               
-             <div class="form-send-footer">
+         </div>           
+        <div class="form-send-footer">
                   <p class="title-footer-form">Підпишіться на розсилку</p>
                   <form class="form-footer" action="">
                     <input class="modal-form-footer" type="text" name="mail" id="mail" placeholder="E-mail"/>
@@ -533,9 +533,9 @@
                     </button>
                     
                   </form>
-                </div>            
+          </div>            
     </footer>
-    <!--Modal Window-->
+    <!--modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -543,9 +543,9 @@
             <use href="./images/symbol-defs.svg#icon-icon-close"></use>
           </svg>
         </button>
-        <strong class="modal-lable">Залиште свої дані, ми вам передзвонимо</strong>
+        <strong class="modal__lable">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form" name="modal_form">
-          <div class="modal-form-group" role="group">
+          <div class="modal-form__group" role="group">
             <lable class="modal-form-lable" for="user_name">Ім'я</lable>
             <div class="modal-form-wrapper">
               <input class="modal-form-field" type="text" name="user_name" id="user_name"/>
@@ -578,14 +578,11 @@
             placeholder="Введіть текст">
           </textarea>
           </div>
-          
-          <div class="modal-form-agreement" role="group">
+          <div class="modal-form__agreement" role="group">
             <input class="modal-form-checkbox" type="checkbox" id="user_agreement">
             <label class="modal-form-agreement-desc" for="user_agreement">Погоджуюся з розсилкою та приймаю <a class="modal-form-agreement-link" href="">Умови договору</a></label>
           </div>
-
-          <button class="modal-form-btn" type="submit">Відправити</button>
-
+          <button class="submit__btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>

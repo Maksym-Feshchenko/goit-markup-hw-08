@@ -15,6 +15,7 @@
       referrerpolicy="no-referrer"
     />
     <!--Custom styles-->
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +29,7 @@
   <!--Header-->
     <header>
       <div class="header-container  header">
-        <a class="logo logo-pos link" href="./index.html"
+        <a class="logo link" href="./index.html"
           >Web<span class="logo-header">Studio</span></a>
         <nav class="nav-main ">
           <ul class="nav-list list">
@@ -43,7 +44,7 @@
             </li>
           </ul>
          </nav>
-        <ul class="nav-list">
+        <ul class="nav-list nav-list-pos">
           <li>
             <a
               class="nav-link link header-contact"
@@ -71,7 +72,7 @@
     <!--Projects-->
     <section class="section">
       <div class="container container-portf">
-        <h1 class="visually-hidden">Портфоліо</h1>
+        <h1 class="hidden-title">Портфоліо</h1>
         <ul class="list container-nav">
           <li class="main-item-portf list-nav">
             <button type="button" class="main-btn-portf">Усі</button>
@@ -293,10 +294,10 @@
     </section>
   </main>
   <!--Footer-->
-   <footer>
+    <footer>
       <div class="container masage-footer">
         <div>
-         <a class="logo link footer-logo" href="/index.html"
+         <a class="logo footer-logo link" href="/index.html"
           >Web<span class="logo-footer-color">Studio</span></a
          >
          <address>
@@ -320,9 +321,8 @@
             </li>
           </ul>
          </address>
-        </div>
-
-            <div class="div-link-footer">
+         </div>
+        <div class="div-link-footer">
               <p class="title-footer">приєднуйтесь</p>
                 <ul class="list list-team list-social">
                   <li class="link-team">
@@ -367,9 +367,8 @@
                     </li>  
                   </li>
                 </ul>
-               </div>
-               
-             <div class="form-send-footer">
+         </div>           
+        <div class="form-send-footer">
                   <p class="title-footer-form">Підпишіться на розсилку</p>
                   <form class="form-footer" action="">
                     <input class="modal-form-footer" type="text" name="mail" id="mail" placeholder="E-mail"/>
@@ -380,6 +379,6 @@
                     </button>
                     
                   </form>
-                </div>            
+          </div>            
     </footer>
 </body>

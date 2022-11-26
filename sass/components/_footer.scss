@@ -1,0 +1,49 @@
+.address-list {
+  margin-bottom: 9px;
+  text-decoration: inherit;
+}
+
+.address-list:last-child {
+  margin-bottom: 0;
+}
+address,
+.address-item {
+  font-style: inherit;
+
+  line-height: 1.71;
+}
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.171;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.masage-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.div-link-footer {
+  margin-left: 94px;
+}
