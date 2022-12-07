@@ -1,6 +1,8 @@
 .card-set {
-  display: flex;
+  justify-content: center;
+
   gap: var(--indent);
+  display: flex;
   flex-wrap: wrap;
 }
 

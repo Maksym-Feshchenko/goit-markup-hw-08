@@ -1,18 +1,65 @@
 .nav-main {
-  margin-left: 93px;
+  @media screen and (max-width: "767px") {
+    display: none;
+  }
+  //margin-left: 93px;
 }
+
+.nav-main {
+  @media screen and (min-width: "768px") {
+    margin-left: 87px;
+  }
+  //margin-left: 93px;
+}
+
 .nav-list {
-  list-style: none;
+  @media screen and (max-width: "767px") {
+    display: none;
+  }
+}
+
+.nav-list {
+  @media screen and (min-width: "768px") {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    align-items: center;
+    gap: 50px;
+  }
+
+  /*list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 
   align-items: center;
-  gap: 50px;
+  gap: 50px;*/
 }
 
 .nav-list-pos {
-  margin-left: 345px;
+  //margin-left: 345px;
+  display: none;
+  margin-left: 96px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+    align-items: center;
+
+    display: flex;
+  }
 }
 
 .nav-cont {
@@ -23,8 +70,11 @@
   display: flex;
   position: relative;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+  }
+
+  //padding-top: 32px;
+  //padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -44,8 +94,26 @@
 
 .header-contact {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
+  font-size: 12px;
+  line-height: 1.166;
+  /* identical to box height */
+
   letter-spacing: 0.02em;
+
   color: #757575;
+
+  @media screen and (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
+
+.nav-list-mar {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+  margin-bottom: 10px;
+}
+

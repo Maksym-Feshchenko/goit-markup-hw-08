@@ -31,6 +31,12 @@
       <div class="header-container  header">
         <a class="logo link" href="./index.html"
           >Web<span class="logo-header">Studio</span></a>
+
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+              <path fill="#000" fill-rule="curentcolor" d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" clip-rule="evenodd"/>
+            </svg>  
+         </button>
         <nav class="nav-main ">
           <ul class="nav-list list">
             <li class="nav-item ">
@@ -45,7 +51,7 @@
           </ul>
          </nav>
         <ul class="nav-list nav-list-pos">
-          <li>
+          <li class="nav-list-mar">
             <a
               class="nav-link link header-contact"
               href="mailto:info@devstudio.com"
@@ -91,15 +97,24 @@
           </li>
         </ul>
         <!--Gallary Portfolio-->
-        <ul class="card-set list">
+        <ul class="card-set list portf-pos">
           <li class="">
-              <a href="" class="img-text card-set-items ">
+              <a href="" class="img-text card-set-items">
                 <div class="gallary-thumb">
               <img
-                src="./images/portfolio-img/img-1 (2).jpg"
-                alt="team-1"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi1@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la1@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm1@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi1@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la1@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm1@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio-img/img-1.jpg"
+                alt="card-1"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -118,10 +133,19 @@
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
               <img
-                src="./images/portfolio-img/img-2.jpg"
-                alt="team-2"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi2@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la2@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm2@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi2@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la2@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm2@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-2.jpg"
+                alt="card-2"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -139,11 +163,20 @@
           <li class="">
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
-              <img
-                src="./images/portfolio-img/img-3.jpg"
-                alt="team-3"
-                width="370"
-                height="294"
+            <img
+                srcset="
+                ./images/portfolio/tablet/img_mi3@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la3@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm3@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi3@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la3@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm3@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-3.jpg"
+                alt="card-3"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -162,10 +195,19 @@
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
               <img
-                src="./images/portfolio-img/img-4.jpg"
-                alt="team-4"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi4@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la4@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm4@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi4@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la4@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm4@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-4.jpg"
+                alt="card-4"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -184,10 +226,19 @@
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
               <img
-                src="images/portfolio-img/img-5.jpg"
-                alt="team-4"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi5@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la5@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm5@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi5@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la5@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm5@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-5.jpg"
+                alt="card-5"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -206,10 +257,19 @@
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
               <img
-                src="./images/portfolio-img/img-6.jpg"
-                alt="team-4"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi6@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la6@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm6@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi6@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la6@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm6@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-6.jpg"
+                alt="card-6"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -228,10 +288,19 @@
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
               <img
-                src="./images/portfolio-img/img-7.jpg"
-                alt="team-4"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi7@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la7@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm7@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi7@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la7@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm7@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-7.jpg"
+                alt="card-7"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -250,10 +319,19 @@
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
               <img
-                src="./images/portfolio-img/img-8.jpg"
-                alt="team-4"
-                width="370"
-                height="294"
+                srcset="
+                ./images/portfolio/tablet/img_mi8@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la8@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm8@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi8@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la8@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm8@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-8.jpg"
+                alt="card-8"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -271,11 +349,20 @@
           <li class="">
             <a href="" class="img-text card-set-items">
               <div class="gallary-thumb">
-              <img
-                src="./images/portfolio-img/img-9.jpg"
-                alt="team-4"
-                width="370"
-                height="294"
+               <img
+                srcset="
+                ./images/portfolio/tablet/img_mi9@1x.jpg 354w,
+                ./images/portfolio/desktop/img_la9@1x.jpg 370w,             
+                ./images/portfolio/phone/img_sm9@1x.jpg 450w, 
+                ./images/portfolio/tablet/img_mi9@2x.jpg 708w,
+                ./images/portfolio/desktop/img_la9@2x.jpg 740w,
+                ./images/portfolio/phone/img_sm9@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
+                src="./images/portfolio/img-9.jpg"
+                alt="card-9"
+                width=""
+                height=""
               />
               <div class="overlay-gallary">
                 <p class="overlay-text">
@@ -381,4 +468,67 @@
                   </form>
           </div>            
     </footer>
+    <!--Mobile Menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item visited">
+          <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-tel-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <!--Mobile Window Script-->
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile_menu.js"></script>
 </body>

@@ -31,7 +31,14 @@
       <div class="header-container  header">
         <a class="logo link" href="./index.html"
           >Web<span class="logo-header">Studio</span></a>
-        <nav class="nav-main ">
+
+          <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+              <path fill="#000" fill-rule="curentcolor" d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" clip-rule="evenodd"/>
+            </svg>  
+         </button>
+          
+        <nav class="nav-main">
           <ul class="nav-list list">
             <li class="nav-item visited visited-line">
               <a href="./index.html" class="nav-link nav-header-link link">Студія</a>
@@ -45,7 +52,7 @@
           </ul>
          </nav>
         <ul class="nav-list nav-list-pos">
-          <li>
+          <li class="nav-list-mar">
             <a
               class="nav-link link header-contact"
               href="mailto:info@devstudio.com"
@@ -69,14 +76,19 @@
     </header>
     <!--Main-->
     <main>
-      <!--hero-->
+
+      <!--Hero--> 
+      
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-section__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-section__btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
+    
+      
       <!--features-->
+      
       <section class="section">
         <div class="container">
           <h2 class="hidden-title">Особливості</h2>
@@ -131,14 +143,20 @@
           </ul>
         </div>
       </section>
+   
       <!--gallary-->
+      
       <section class="gallery section-gallery">
         <div class="container">
           <h2 class="about-title">Чим ми займаємося</h2>
           <ul class="card-set list">
             <li class="card-set-items gallary-item">
               <img
-                src="./images/about/what-do-we-do-1.jpg"
+                srcset="
+                ./images/about/img_la1@1x.jpg, 
+                ./images/about/img_la1@2x.jpg
+                "
+                src="./images/about/about-1.jpg"
                 alt="зайнятість-1"
                 width="370"
                 height="294"
@@ -149,7 +167,8 @@
             </li>
             <li class="card-set-items gallary-item">
               <img
-                src="./images/about/what-do-we-do-2.jpg"
+              srcset="./images/about/img_la2@1x.jpg, ./images/about/img_la2@2x.jpg"
+                src="./images/about/about-2.jpg"
                 alt="зайнятість-2"
                 width="370"
                 height="294"
@@ -160,7 +179,8 @@
             </li>
             <li class="card-set-items gallary-item">
               <img
-                src="./images/about/what-do-we-do-3.jpg"
+              srcset="./images/about/img_la3@1x.jpg , ./images/about/img_la3@2x.jpg"
+                src="./images/about/about-3.jpg"
                 alt="зайнятість-3"
                 width="370"
                 height="294"
@@ -172,17 +192,28 @@
           </ul>
         </div>
       </section>
+    
       <!--team-->
+      
       <section class="team-section">
         <div class="container container-team">
           <h2 class="team-title">Наша команда</h2>
           <ul class="card-set team-list list">
             <li class="card-set-items team-fon">
               <img
+                srcset="
+                ./images/team/img_la1@1x.jpg 270w,
+                ./images/team/img_mi1@1x.jpg 354w,
+                ./images/team/img_sm1@1x.jpg 450w, 
+                ./images/team/img_la1@2x.jpg 540w,
+                ./images/team/img_mi1@2x.jpg 708w,
+                ./images/team/img_sm1@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/team/team-1.jpg"
                 alt="team-1"
-                width="270"
-                height="260"
+                width=""
+                height=""
               />
               <div class="team-wrapper">
                 <h3 class="team-worker">Ігор Дем'яненко</h3>
@@ -232,11 +263,20 @@
               </div>
             </li>
             <li class="card-set-items team-fon">
-              <img
+                <img
+                srcset="
+                ./images/team/img_la2@1x.jpg 270w,
+                ./images/team/img_mi2@1x.jpg 354w,
+                ./images/team/img_sm2@1x.jpg 450w, 
+                ./images/team/img_la2@2x.jpg 540w,
+                ./images/team/img_mi2@2x.jpg 708w,
+                ./images/team/img_sm2@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/team/team-2.jpg"
                 alt="team-2"
-                width="270"
-                height="260"
+                width=""
+                height=""
               />
               <div class="team-wrapper">
                 <h3 class="team-worker">Ольга Рєпіна</h3>
@@ -286,11 +326,20 @@
               </div>
             </li>
             <li class="card-set-items team-fon">
-              <img
+                  <img
+                srcset="
+                ./images/team/img_la3@1x.jpg 270w,
+                ./images/team/img_mi3@1x.jpg 354w,
+                ./images/team/img_sm3@1x.jpg 450w, 
+                ./images/team/img_la3@2x.jpg 540w,
+                ./images/team/img_mi3@2x.jpg 708w,
+                ./images/team/img_sm3@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/team/team-3.jpg"
                 alt="team-3"
-                width="270"
-                height="260"
+                width=""
+                height=""
               />
               <div class="team-wrapper">
                 <h3 class="team-worker">Микола Тарасов</h3>
@@ -340,11 +389,20 @@
               </div>
             </li>
             <li class="card-set-items team-fon">
-              <img
+                  <img
+                srcset="
+                ./images/team/img_la4@1x.jpg 270w,
+                ./images/team/img_mi4@1x.jpg 354w,
+                ./images/team/img_sm4@1x.jpg 450w, 
+                ./images/team/img_la4@2x.jpg 540w,
+                ./images/team/img_mi4@2x.jpg 708w,
+                ./images/team/img_sm4@2x.jpg 900w,
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                 src="./images/team/team-4.jpg"
                 alt="team-4"
-                width="270"
-                height="260"
+                width=""
+                height=""
               />
               <div class="team-wrapper">
                 <h3 class="team-worker">Михайло Єрмаков</h3>
@@ -396,7 +454,9 @@
           </ul>
         </div>
       </section>
+    
       <!--clients-->
+       
       <section class="section clients-section">
         <div class="container">
           <h2 class="titel-clients">Постійні клієнти</h2>
@@ -445,9 +505,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
+    
     </main>
-    <!--footer-->
+    <!--Footer-->
     <footer>
       <div class="container masage-footer">
         <div>
@@ -535,7 +596,7 @@
                   </form>
           </div>            
     </footer>
-    <!--modal window-->
+    <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -586,6 +647,68 @@
         </form>
       </div>
     </div>
+    <!--Mobile Menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item visited">
+          <a class="mobile-menu-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-tel-link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="" class="mobile-contacts-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-social-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <!--Mobile Window Script-->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile_menu.js"></script>
   </body>
 </html>
