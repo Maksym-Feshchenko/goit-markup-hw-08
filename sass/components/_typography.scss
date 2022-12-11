@@ -72,17 +72,27 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  justify-content: center;
+
   color: #ffffff;
 
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .title-footer-form {
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  text-align: center;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -90,6 +100,7 @@
 
   margin-bottom: 20px;
 }
+
 .portf-title {
   margin-bottom: 8px;
   margin-bottom: 4px;

@@ -1,5 +1,5 @@
 .address-list {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   text-decoration: inherit;
 }
 
@@ -9,7 +9,6 @@
 address,
 .address-item {
   font-style: inherit;
-
   line-height: 1.71;
 }
 .footer-address {
@@ -40,11 +39,65 @@ address,
 }
 
 .masage-footer {
-  //display: flex;
-
-  align-items: baseline;
+  //margin-left: auto;
+  //margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: inherit;
+  }
+  gap: 60px;
+  @media screen and (min-width: 1200px) {
+    gap: 94px;
+  }
 }
 
 .div-link-footer {
-  margin-left: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.blok-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+////
+///
+
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: initial;
+    justify-content: center;
+    gap: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+  }
+}
+
+.contacts-list {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  margin-left: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }

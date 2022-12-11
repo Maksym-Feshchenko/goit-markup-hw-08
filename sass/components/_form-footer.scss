@@ -1,9 +1,10 @@
 .form-send-footer {
-  margin-left: 93px;
+  //margin-left: 93px;
+  display: block;
 }
 
 .modal-form-footer {
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   padding-left: 16px;
@@ -13,6 +14,9 @@
   border-radius: 4px;
 
   background: #2f303a;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .modal-form-footer:focus {
@@ -21,12 +25,14 @@
 }
 
 .form-footer {
+  gap: 20px;
   display: flex;
-
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 
-  gap: 12px;
+  @media screen and (min-width: 1200px) {
+    flex-direction: inherit;
+  }
 }
 
 .img-send-footer {

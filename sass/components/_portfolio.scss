@@ -7,22 +7,32 @@
   display: inline-block;
 
   justify-content: center;
+  gap: 30px;
 
   @media screen and (max-width: 767px) {
-    width: 326px;
+    width: 320px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+
+    margin-left: 0%;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 50px;
   }
 }
 
 .container-portf {
   margin-bottom: 34px;
-}
-
-.portf-pos {
 }
 
 .portf-text {
@@ -34,14 +44,21 @@
 }
 
 .main-item-portf {
-  margin-right: 8px;
-
+  margin-right: -8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+.main-item-portf:last-child {
+  //margin-right: 0;
 }
 
 .img-text {

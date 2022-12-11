@@ -36,7 +36,12 @@
 
   width: 450px;
   min-height: 609px;
-  margin-top: 93px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+
   overflow-y: scroll;
 
   padding: 40px;
@@ -63,11 +68,18 @@
   margin-bottom: 12px;
   text-align: center;
 
+  font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
+
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .modal-form-lable {
@@ -170,6 +182,19 @@
 }
 .modal-form-agreement-desc {
   user-select: none;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .modal-form-checkbox:checked {
